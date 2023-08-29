@@ -1,3 +1,9 @@
+import Hero from "@/components/views/Hero";
+
 export default function Home() {
-  return <main className=""></main>;
+  return (
+    <div className="">
+      <Hero />
+    </div>
+  );
 }

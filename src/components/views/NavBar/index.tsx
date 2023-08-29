@@ -57,7 +57,7 @@ const NavBar = () => {
             <BiSearch />
             <input
               type="text"
-              className=" w-52 xlg:w-80 py-1 px-2 "
+              className="focus:outline-none w-52 xlg:w-80 py-1 px-2 "
               placeholder="Search"
             />
           </div>
