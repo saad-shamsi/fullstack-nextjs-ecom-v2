@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* globals.css or custom CSS file */
+.slide-in {
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+
+}
+
+.slide-in.open {
+  transform: rotate(-90deg);
+}
