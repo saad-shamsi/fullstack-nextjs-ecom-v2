@@ -10,7 +10,7 @@ const Expand: FC<{ item: NavBarItemType }> = ({ item }) => {
   return (
     <li
       className={`${
-        open && item.isDropdown ? "h-44" : "h-12"
+        open && item.isDropdown ? "h-56" : "h-12"
       }   duration-300 list-none`}
     >
       <div
@@ -21,7 +21,7 @@ const Expand: FC<{ item: NavBarItemType }> = ({ item }) => {
         {item.isDropdown && (
           <MdOutlineArrowDropDown
             className={
-              !open && `mt-1 -rotate-180 hover:rotate-0 duration-300 group`
+              !open ? "mt-1 -rotate-180 hover:rotate-0 duration-300 group" : ""
             }
           />
         )}

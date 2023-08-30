@@ -1,13 +1,14 @@
 import Hero from "@/components/views/Hero";
-import ProductTypes from "@/components/views/ProductTypes";
+
+import Promotion from "@/components/views/Promotion";
 
 export default function Home() {
   return (
     <div className="">
       {/* Hero Section */}
       <Hero />
-      {/* Sub Hero */}
-      <ProductTypes />
+      {/* Promotional Banner */}
+      <Promotion />
     </div>
   );
 }
