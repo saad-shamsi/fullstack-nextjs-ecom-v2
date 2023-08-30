@@ -17,7 +17,7 @@ const NavBar = () => {
     setIsNavBarOpen(!isNavBarOpen);
   }
   return (
-    <nav className="">
+    <nav className="sticky backdrop-blur-lg top-0 bg-color text-cyan-900">
       <div className="flex items-center justify-between py-6 space-x-10">
         <div className="w-36">
           <Image
@@ -45,7 +45,7 @@ const NavBar = () => {
                     ""
                   )}
                   {item.isDropdown && (
-                    <div className="invisible group-hover:visible group-hover:duration-300 py-2  px-2  text-lg font-light rounded bg-slate-200 absolute top-10 left-0 min-w-[7.8rem]">
+                    <div className="invisible text-cyan-700 bg-sky-100 group-hover:visible group-hover:duration-300 py-2  px-2  text-lg font-light rounded  absolute top-10 left-0 min-w-[7.8rem]">
                       <DropDown item={item} />
                     </div>
                   )}
