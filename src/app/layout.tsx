@@ -1,8 +1,10 @@
-import NavBar from "@/components/views/NavBar";
+import NavBar from "@/components/views/Layout/NavBar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import Wrapper from "@/components/shared/Wrapper/page";
+import Footer from "@/components/views/Layout/Footer";
+import SubFooter from "@/components/views/Layout/SubFooter";
 
 const inter = Sora({
   subsets: ["latin"],
@@ -25,6 +27,8 @@ export default function RootLayout({
         <Wrapper>
           <NavBar />
           {children}
+          {/* <Footer />
+          <SubFooter /> */}
         </Wrapper>
       </body>
     </html>

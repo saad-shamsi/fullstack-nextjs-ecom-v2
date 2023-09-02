@@ -10,8 +10,8 @@ const Hero = () => {
   return (
     <main>
       {/* Main div */}
-      <div className="flex wrapper xs:ml-0 ml-10 lg:flex-row flex-col items-center gap-y-20 justify-between">
-        {/* Right side */}
+      <div className="flex w-full bg-sky-200   lg:flex-row flex-col items-center gap-y-20 justify-between">
+        {/*Left side */}
         <div className="  space-y-10 mt-24 ">
           {" "}
           <button
@@ -20,7 +20,7 @@ const Hero = () => {
           >
             Sale 70%
           </button>
-          <div className="text-[#212121] text-6xl font-bold max-w-lg">
+          <div className="text-[#212121] md:text-6xl text-4xl font-bold max-w-lg">
             An Industrial Take on Streetwear
           </div>
           <div className="text-[#666666] text-lg max-w-[26rem]">
@@ -29,12 +29,12 @@ const Hero = () => {
           </div>
           <button
             aria-label="redirect the user to the shopping page"
-            className="bg-[#282828] text-white font-medium text-xl w-[16rem] h-16 flex items-center justify-center gap-x-4"
+            className="bg-[#282828] text-white font-medium rounded text-xl md:w-[16rem] w-[14rem] md:h-[4rem] h-[3.5rem] flex items-center justify-center md:gap-x-4 gap-x-1 "
           >
             <div>
               <BsCart2 size={25} />
             </div>
-            <div className="self-center">Start Shopping</div>
+            <div className="self-center text-center mt-2">Start Shopping</div>
           </button>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-16 gap-y-10 flex-1">
             <Image src={asset1} alt="" />
@@ -44,11 +44,13 @@ const Hero = () => {
           </div>
         </div>
         {/* Left sid */}
-        <div className=" xl:object-none min-w-[400px] w-1/2 shrink-0 ">
+        <div className=" xl:object-none md:min-w-[400px] shrink-0 bg-slate-200 ">
           <Image
             src={Header}
             alt="woman standing "
             className="z-40 md:w-full max-w-full  "
+            width={700}
+            height={800}
           />
 
           {/* <div className="w-[600px] h-[600px] bg-[#ffece3] rounded-full absolute top-32 left-50 -z-20 "></div> */}
