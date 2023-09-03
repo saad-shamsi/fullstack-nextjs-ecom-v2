@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <main>
       {/* Main div */}
-      <div className="flex w-full bg-sky-200   lg:flex-row flex-col items-center gap-y-20 justify-between">
+      <div className="flex w-full    lg:flex-row flex-col items-center gap-y-20 justify-around">
         {/*Left side */}
         <div className="  space-y-10 mt-24 ">
           {" "}
@@ -44,13 +44,13 @@ const Hero = () => {
           </div>
         </div>
         {/* Left sid */}
-        <div className=" xl:object-none md:min-w-[400px] shrink-0 bg-slate-200 ">
+        <div className=" xl:object-none md:min-w-[400px] shrink-0   ">
           <Image
             src={Header}
             alt="woman standing "
             className="z-40 md:w-full max-w-full  "
-            width={700}
-            height={800}
+            width={500}
+            height={500}
           />
 
           {/* <div className="w-[600px] h-[600px] bg-[#ffece3] rounded-full absolute top-32 left-50 -z-20 "></div> */}

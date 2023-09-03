@@ -1,6 +1,5 @@
 import { client } from "../../../../sanity/lib/client";
-import { NextRequest, NextResponse } from "next/server";
-import { ImageUrlBuilder } from "sanity";
+import {  NextResponse } from "next/server";
 export async function GET() {
   try {
     const response = await client.fetch(`*[_type == 'product'] {
